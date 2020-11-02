@@ -2,89 +2,135 @@
 <html lang="en">
   <head>
     <title>Nick's 1st coffee table</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="demo-styles.css">
-    
+    <link rel="stylesheet" href="demo-styles.css" />
+
     <!-- The following libraries and polyfills are recommended to maximize browser support -->
     <!-- NOTE: you must adjust the paths as appropriate for your project -->
-    
+
     <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
-<!--     <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> -->
+    <!--     <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> -->
 
     <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
-<!--     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script> -->
+    <!--     <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script> -->
 
     <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
-<!--     <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script> -->
-    
-    <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
-    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+    <!--     <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script> -->
 
-  </head> 
-<body>
-  <div id="card">
-    <!-- All you need to put beautiful, interactive 3D content on your site: -->
-    <model-viewer src="https://cdn.glitch.com/44597500-0738-441e-b7fb-584c76b7a9c0%2Ftbl_done.gltf?v=1604285539001"
-                  ios-src="https://cdn.glitch.com/44597500-0738-441e-b7fb-584c76b7a9c0%2Ftbl_done.usdz?v=1604285545178"
-                  poster="https://cdn.glitch.com/44597500-0738-441e-b7fb-584c76b7a9c0%2Fposter.png?v=1604044382158"
-                  alt="A 3D model of Nick's 1st coffee table"
-                  style="background-color: unset;"
-                  shadow-intensity="1"
-                  shadow-softness="1"
-                  exposure="1.5"
-                  camera-controls
-                  ar-scale="fixed"
-                  auto-rotate ar>
-    </model-viewer>
+    <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script
+      src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div id="card">
+      <!-- All you need to put beautiful, interactive 3D content on your site: -->
+      <model-viewer
+        src="https://cdn.glitch.com/44597500-0738-441e-b7fb-584c76b7a9c0%2Ftbl_done.gltf?v=1604285539001"
+        ios-src="https://cdn.glitch.com/44597500-0738-441e-b7fb-584c76b7a9c0%2Ftbl_done.usdz?v=1604285545178"
+        poster="https://cdn.glitch.com/44597500-0738-441e-b7fb-584c76b7a9c0%2Fposter.png?v=1604044382158"
+        alt="A 3D model of Nick's 1st coffee table"
+        style="background-color: unset;"
+        shadow-intensity="1"
+        shadow-softness="1"
+        exposure="1.5"
+        camera-controls
+        ar-scale="fixed"
+        auto-rotate
+        ar
+      >
+      </model-viewer>
       <section class="attribution">
-      <span>
-        <h1>Coffee table designed for woodwork by <a href="mailto:heroyik@gmail.com">Nick</a></h1>
-<!--        <span style="font-size: 15px;">Made of walnut and 5mm tampered glass, 1200(W)*750(D)*330(H)mm.</span><br>
+        <span>
+          <h1>
+            Coffee table designed for woodwork by
+            <a href="mailto:heroyik@gmail.com">Nick</a>
+          </h1>
+          <!--        <span style="font-size: 15px;">Made of walnut and 5mm tampered glass, 1200(W)*750(D)*330(H)mm.</span><br>
 -->
-        <span style="font-size: 12px;">Made of walnut and 5mm tampered glass, 1200(W)*750(D)*330(H)mm.</span><br>
-        <span style="font-size: 12px;">Download <a href="https://cdn.glitch.com/44597500-0738-441e-b7fb-584c76b7a9c0%2F%E2%98%85%20design_done_jnt-woodwork_tmp_20mm.skp?v=1604225975706">Sketchup file</a>, 
-      <a href="https://cdn.glitch.com/44597500-0738-441e-b7fb-584c76b7a9c0%2Flayout_20mm.layout?v=1604225970064">Layout</a>
-      (<a href="https://cdn.glitch.com/44597500-0738-441e-b7fb-584c76b7a9c0%2Flayout_20mm.pdf?v=1604226649320">PDF</a>), 
-      <a href="https://cdn.glitch.com/44597500-0738-441e-b7fb-584c76b7a9c0%2Fcutlist_20mm.pdf?v=1604225983623">Cutlist</a>,
-      <a href="https://cdn.glitch.com/44597500-0738-441e-b7fb-584c76b7a9c0%2Ftbl_done.zip?v=1604285667290">3D models for AR(GLTF, USDZ)</a></span>
-      </span>
-<!-- 
+          <span style="font-size: 12px;"
+            >Made of walnut and 5mm tampered glass,
+            1200(W)*750(D)*330(H)mm.</span
+          ><br />
+          <span style="font-size: 12px;"
+            >Download
+            <a
+              href="https://cdn.glitch.com/44597500-0738-441e-b7fb-584c76b7a9c0%2F%E2%98%85%20design_done_jnt-woodwork_tmp_20mm.skp?v=1604225975706"
+              >Sketchup file</a
+            >,
+            <a
+              href="https://cdn.glitch.com/44597500-0738-441e-b7fb-584c76b7a9c0%2Flayout_20mm.layout?v=1604225970064"
+              >Layout</a
+            >
+            (<a
+              href="https://cdn.glitch.com/44597500-0738-441e-b7fb-584c76b7a9c0%2Flayout_20mm.pdf?v=1604226649320"
+              >PDF</a
+            >),
+            <a
+              href="https://cdn.glitch.com/44597500-0738-441e-b7fb-584c76b7a9c0%2Fcutlist_20mm.pdf?v=1604225983623"
+              >Cutlist</a
+            >,
+            <a
+              href="https://cdn.glitch.com/44597500-0738-441e-b7fb-584c76b7a9c0%2Ftbl_done.zip?v=1604285667290"
+              >3D models for AR(GLTF, USDZ)</a
+            ></span
+          >
+        </span>
+        <!-- 
       <a class="cc" href="https://creativecommons.org/licenses/by/2.0/" target="_blank">
         <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg">
         <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg">
       </a>
 -->
-    </section>
-  </div>
-  
-  
-  <footer>
-    <span>I truely believe the power of <b>DEMOCRATIZATION</b> in furniture, fashion, etc.</span>
-    <span>Please place it to where you love and enjoy my design assets <b>freely</b>!</span>
-    <span style="font-size: 12px;">Inspired by <a href="https://www.etsy.com/listing/486299926/mid-century-modern-carved-coffee-table">Mid Century Modern carved coffee table inspired by Ico Parisi</a></span>
-    <span style="font-size: 12px;">Endless love to <a href="https://yzed.me">YZED</a>(<a href="https://instagram.com/yzed_official?igshid=jhj5sxkwn5u5">instagram</a>, <a href="https://yzed-ar.netlify.app">portfolios</a>)</span>
-    <!--       <a href="https://github.com/GoogleWebComponents/model-viewer" target="_blank">&lt;model-viewer&gt;</a> web component.</span>
+      </section>
+    </div>
+
+    <footer>
+      <span
+        >I truely believe the power of <b>DEMOCRATIZATION</b> in furniture,
+        fashion, etc.</span
+      >
+      <span
+        >Please place it to where you love and enjoy my design assets
+        <b>freely</b>!</span
+      >
+      <span style="font-size: 12px;"
+        >Inspired by
+        <a
+          href="https://www.etsy.com/listing/486299926/mid-century-modern-carved-coffee-table"
+          >Mid Century Modern carved coffee table inspired by Ico Parisi</a
+        ></span
+      >
+      <span style="font-size: 12px;"
+        >Endless love to <a href="https://yzed.me">YZED</a>(<a
+          href="https://instagram.com/yzed_official?igshid=jhj5sxkwn5u5"
+          >instagram</a
+        >, <a href="https://yzed-ar.netlify.app">portfolios</a>)</span
+      >
+      <!--       <a href="https://github.com/GoogleWebComponents/model-viewer" target="_blank">&lt;model-viewer&gt;</a> web component.</span>
     <span>It makes displaying 3D and AR content on the web easy ✌️</span>
     <a href="https://glitch.com/edit/#!/remix/model-viewer">
       <img src="https://cdn.glitch.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix%402x.png?1513093958726" alt="remix button" aria-label="remix" height="33">
     </a>
 -->
-  </footer>
-  
-  
-  <!-- 💁 Include both scripts below to support all browsers! -->
+    </footer>
 
-  <!-- Loads <model-viewer> for modern browsers: -->
-  <script type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
-  </script>
+    <!-- 💁 Include both scripts below to support all browsers! -->
 
-  <!-- Loads <model-viewer> for old browsers like IE11: -->
-  <script nomodule
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
-  </script>
-</body>
+    <!-- Loads <model-viewer> for modern browsers: -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+
+    <!-- Loads <model-viewer> for old browsers like IE11: -->
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+  </body>
 </html>
