@@ -21,20 +21,17 @@
     <!--     <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script> -->
 
     <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
-    <script
-      src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js"
-      defer
-    ></script>
+    <script src="assets/js/focus-visible.js" defer></script>
   </head>
   <body>
     <div id="card">
       <!-- All you need to put beautiful, interactive 3D content on your site: -->
       <model-viewer
-        src="https://cdn.glitch.com/0285812e-55e8-4b7d-844f-084f6f720321%2Fsn_mm1.gltf?v=1629253897780" 
-        ios-src="https://cdn.glitch.com/0285812e-55e8-4b7d-844f-084f6f720321%2Fsn_mm1.usdz?v=1629253909149"
-        poster="https://cdn.glitch.com/0285812e-55e8-4b7d-844f-084f6f720321%2FSansone%20Dress%20655965%20001%20Turquoise.png?v=1629178782076"
+        src="assets/models/sn_mm1.gltf"
+        ios-src="assets/models/sn_mm1.usdz"
+        poster="assets/img/poster.png"
         alt="A 3D model by nIcK"
-        style="background-color: unset;"
+        style="background-color: unset"
         loading="lazy"
         ar-modes="scene-viewer webxr quick-look"
         shadow-intensity="1"
@@ -50,12 +47,17 @@
       <section class="attribution">
         <span>
           <h1>
-            Female dress motivated from <a href="https://www.trenbe.com/good/13483946?utm_source=network&utm_medium=cpc&utm_campaign=critarget&utm_content=high">maxmara dress</a> by
+            Female dress motivated from
+            <a
+              href="https://www.trenbe.com/good/13483946?utm_source=network&utm_medium=cpc&utm_campaign=critarget&utm_content=high"
+              >maxmara dress</a
+            >
+            by
             <a href="mailto:heroyik@gmail.com">nIcK</a>
           </h1>
           <!--        <span style="font-size: 15px;">Made of walnut and 5mm tampered glass, 1200(W)*750(D)*330(H)mm.</span><br>
 -->
-          <span style="font-size: 12px;"
+          <span style="font-size: 12px"
             >Height: 163, Bust:82, Waist:62, Hip:88cm, 2021/08/17</span
           ><br />
         </span>
@@ -77,20 +79,21 @@
         >Please place it to where you love and enjoy my design assets
         <b>freely</b>!</span
       >
-      <span style="font-size: 12px;">Download CLO3D files (
-        <a href="https://cdn.glitch.com/0285812e-55e8-4b7d-844f-084f6f720321%2FSansone%20Dress%20655965%20001%20Turquoise.zprj?v=1629178823656">project file), </a>
-        <a href="https://cdn.glitch.com/0285812e-55e8-4b7d-844f-084f6f720321%2Fsn_mm1.dxf?v=1629178897601">pattern pieces(dxf)</a>
+      <span style="font-size: 12px"
+        >Download CLO3D files (
+        <a href="assets/downloads/project.zprj">project file), </a>
+        <a href="assets/downloads/sn_mm1.dxf">pattern pieces(dxf)</a>
       </span>
-      <span style="font-size: 12px;"
-        >I hope you will also like  
-        <a
-          href="https://female-leggings.glitch.me"
-          >Female leggings (camouflage)</a>, 
-        <a href="https://fblc.glitch.me">Batwing and leggings</a>, 
+      <span style="font-size: 12px"
+        >I hope you will also like
+        <a href="https://female-leggings.glitch.me"
+          >Female leggings (camouflage)</a
+        >, <a href="https://fblc.glitch.me">Batwing and leggings</a>,
         <a href="https://fsijc.glitch.me">Set-in jacket</a>
       </span>
-      <span style="font-size: 12px;"
-        >Originally initiated and inspired by project <a href="https://yzed.me">YZED</a>(<a
+      <span style="font-size: 12px"
+        >Originally initiated and inspired by project
+        <a href="https://yzed.me">YZED</a>(<a
           href="https://instagram.com/yzed_official?igshid=jhj5sxkwn5u5"
           >instagram</a
         >, <a href="https://yzed-ar.netlify.app">portfolios</a>)</span
@@ -107,15 +110,14 @@
     <!-- 💁 Include both scripts below to support all browsers! -->
 
     <!-- Loads <model-viewer> for modern browsers: -->
-    <script
-      type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
-    ></script>
+    <script type="module" src="assets/js/model-viewer.min.js"></script>
 
     <!-- Loads <model-viewer> for old browsers like IE11: -->
+    <!-- Legacy script not available on unpkg anymore
     <script
       nomodule
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
     ></script>
+    -->
   </body>
 </html>
