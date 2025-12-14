@@ -1,0 +1,27 @@
+[build]
+  publish = "."
+  command = "npm run build"
+
+[[headers]]
+  for = "/assets/models/*.gltf"
+  [headers.values]
+    Content-Type = "model/gltf+json"
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/assets/models/*.usdz"
+  [headers.values]
+    Content-Type = "model/vnd.usdz+zip"
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/assets/models/*.glb"
+  [headers.values]
+    Content-Type = "model/gltf-binary"
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/assets/models/sn_mm1_optimized.glb"
+  [headers.values]
+    Content-Type = "model/gltf-binary"
+    Access-Control-Allow-Origin = "*"
