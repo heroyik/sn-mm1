@@ -8,6 +8,7 @@
     Content-Type = "model/gltf+json"
     Access-Control-Allow-Origin = "*"
 
+
 [[headers]]
   for = "/assets/models/*.usdz"
   [headers.values]
