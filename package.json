@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Static site for 3D models",
   "scripts": {
-    "build": "echo 'No build step required for static site'"
+    "build": "echo 'No build step required for static site'",
+    "start": "npx http-server . -c-1"
+
   },
   "keywords": [],
   "author": "",
