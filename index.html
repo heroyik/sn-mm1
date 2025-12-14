@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>3D Fashion Showcase</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:ital,wght@0,300;0,700;1,300&family=Orbitron:wght@500&family=Roboto+Mono&family=Spectral:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Polyfills -->
+    <script src="assets/js/focus-visible.js" defer></script>
+  </head>
+  <body>
+    
+    <header>
+        <div class="theme-switcher">
+            <button class="theme-btn active" data-theme="minimalist">Minimalist</button>
+            <button class="theme-btn" data-theme="midnight">Midnight</button>
+            <button class="theme-btn" data-theme="nature">Nature</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="card">
+            <model-viewer
+                src="https://cdn.jsdelivr.net/gh/heroyik/sn-mm1@master/assets/models/sn_mm1.gltf"
+
+                ios-src="https://cdn.jsdelivr.net/gh/heroyik/sn-mm1@master/assets/models/sn_mm1.usdz"
+                poster="https://cdn.jsdelivr.net/gh/heroyik/sn-mm1@master/assets/img/poster.png"
+
+                alt="A 3D model of a female dress"
+                loading="eager"
+                ar
+                ar-modes="scene-viewer webxr quick-look"
+                camera-controls
+                auto-rotate
+                shadow-intensity="1"
+                shadow-softness="1"
+                exposure="0.6"
+            >
+            </model-viewer>
+            
+            <section class="content">
+                <h1>
+                    Female dress motivated from
+                    <a href="https://www.trenbe.com/good/13483946" target="_blank" rel="noopener">maxmara dress</a>
+                    by <a href="mailto:heroyik@gmail.com">nIcK</a>
+                </h1>
+                
+                <div class="details">
+                    <span>Height: 163cm, Bust: 82cm, Waist: 62cm, Hip: 88cm</span>
+                    <br>
+                    <small>Created: 2021/08/17</small>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>I truly believe in the power of <b>DEMOCRATIZATION</b> in fashion design.</p>
+        <p>Please place it to where you love and enjoy my design assets <b>freely</b>!</p>
+        
+        <p>
+            Download CLO3D files:
+            <a href="https://cdn.jsdelivr.net/gh/heroyik/sn-mm1@master/assets/downloads/project.zprj">Project File</a>, 
+            <a href="https://cdn.jsdelivr.net/gh/heroyik/sn-mm1@master/assets/downloads/sn_mm1.dxf">Pattern (DXF)</a>
+
+        </p>
+
+        <p>
+            Check out other designs:
+            <a href="https://female-leggings.glitch.me">Leggings</a>, 
+            <a href="https://fblc.glitch.me">Batwing</a>,
+            <a href="https://fsijc.glitch.me">Jacket</a>
+        </p>
+        
+        <p>Inspired by <a href="https://yzed.me">YZED</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="assets/js/model-viewer.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
