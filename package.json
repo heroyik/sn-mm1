@@ -1,0 +1,11 @@
+{
+  "name": "sn-mm1",
+  "version": "1.0.0",
+  "description": "Static site for 3D models",
+  "scripts": {
+    "build": "echo 'No build step required for static site'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
