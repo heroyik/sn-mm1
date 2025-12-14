@@ -106,6 +106,32 @@ header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Download Buttons */
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.btn-download {
+  display: block;
+  background: var(--secondary-bg);
+  color: var(--text-color);
+  padding: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.btn-download:hover {
+  background: var(--accent-color);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
 /* Main Content */
 main {
   flex: 1;
@@ -182,15 +208,35 @@ footer a {
 }
 
 @media (max-width: 600px) {
+  /* Full bleed viewer on mobile */
+  .card {
+    border-radius: 0;
+    box-shadow: none;
+    max-width: 100%;
+    margin: 0;
+  }
+
   model-viewer {
-    height: 400px;
+    height: 65vh; /* Immersive height */
+  }
+
+  main {
+    padding: 0; /* Remove padding around card */
   }
 
   .content {
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
+    text-align: center;
   }
 
   h1 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Bigger touch targets for theme switcher */
+  .theme-btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
   }
 }
