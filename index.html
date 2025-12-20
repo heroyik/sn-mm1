@@ -84,5 +84,21 @@
     <!-- Scripts -->
     <script type="module" src="assets/js/model-viewer.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <!-- GitHub Pages Link Rewriter -->
+    <script>
+        (function() {
+            if (window.location.hostname.includes('github.io')) {
+                console.log('GitHub Pages detected: Rewriting Netlify links...');
+                document.querySelectorAll('a[href*=".netlify.app"]').forEach(a => {
+                    try {
+                        const url = new URL(a.href);
+                        const subdomain = url.hostname.split('.')[0];
+                        const user = 'heroyik';
+                        a.href = `https://${user}.github.io/${subdomain}`;
+                    } catch (e) { console.error('Link rewrite error:', e); }
+                });
+            }
+        })();
+    </script>
   </body>
 </html>
